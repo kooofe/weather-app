@@ -15,6 +15,14 @@
 
 }
 
+.clouds {
+    background-color: #F6F1F1;
+    --main-color: #AFD3E2;
+    --main-color-2: #19A7CE;
+    --highlight: #146C94;
+    --text-color: black
+}
+
 .night {
     background-color: #363062;
     --main-color: #435585;
