@@ -1,0 +1,27 @@
+.rain {
+    --background-color: #1E0342;
+    --main-color: #0E46A3;
+    --main-color-2: #9AC8CD;
+    --highlight: #E1F7F5;
+}
+
+.day {
+    --background-color: #00A9FF;
+    --main-color: #89CFF3;
+    --main-color-2: #A0E9FF;
+    --highlight: #CDF5FD;
+}
+
+.night {
+    --background-color: #363062;
+    --main-color: #435585;
+    --main-color-2: #818FB4;
+    --highlight: #F5E8C7;
+}
+
+.sunset {
+    --background-color: #FFAF45;
+    --main-color: #FB6D48;
+    --main-color-2: #D74B76;
+    --highlight: #673F69;
+}
