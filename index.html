@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,10 @@
 <body class="day">
 <div class="form-container poppins-semibold">
     <form>
-        <label for="city"> City:</label>
-        <input id="city" type="text">
-        <button class="poppins-semibold" type="submit">Submit</button>
+        <label for="cityName"> City:</label>
+        <input type="text" id="cityName" placeholder="Enter city name">
+        <button type="submit">Submit</button>
     </form>
-</div>
-<div class="weather-div">
-    <p>Moscow</p>
-    <p>Clear</p>
-    <p>290.21*</p>
-    <p>feels like</p>
 </div>
 
 </body>
