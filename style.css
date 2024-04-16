@@ -1,22 +1,27 @@
 .rain {
-    --background-color: #1E0342;
+    background-color: #1E0342;
     --main-color: #0E46A3;
     --main-color-2: #9AC8CD;
     --highlight: #E1F7F5;
+    --text-color: black
 }
 
 .day {
-    --background-color: #00A9FF;
+    background-color: #00A9FF;
     --main-color: #89CFF3;
     --main-color-2: #A0E9FF;
     --highlight: #CDF5FD;
+    --text-color: black
+
 }
 
 .night {
-    --background-color: #363062;
+    background-color: #363062;
     --main-color: #435585;
     --main-color-2: #818FB4;
     --highlight: #F5E8C7;
+    --text-color: white
+
 }
 
 .sunset {
@@ -24,4 +29,78 @@
     --main-color: #FB6D48;
     --main-color-2: #D74B76;
     --highlight: #673F69;
+    --text-color: black
+
 }
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form-container {
+    font-size: 24px;
+    width: clamp(440px, 50%, 500px);
+
+    & > form {
+        border-radius: 20px;
+        padding: 16px 24px 16px;
+        background-color: var(--main-color);
+        height: 56px;
+        display: flex;
+        flex: 1;
+
+        justify-content: center;
+        column-gap: 20px;
+        align-items: center;
+
+        & > input {
+            width: 200px;
+            height: 1.6rem;
+            font-size: 24px;
+            background-color: var(--main-color);
+            border: solid 2px var(--highlight);
+            border-radius: 25px;
+
+            :focus {
+                background-color: initial;
+            }
+
+        }
+
+        & > button {
+            background-color: var(--highlight);
+            border-radius: 25px;
+        }
+    }
+}
+
+.weather-div {
+    background-color: var(--main-color);
+    width: 40%;
+    padding: 16px 24px 16px;
+    border-radius: 20px;
+    flex: 1;
+
+    & > p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    & p:first-child {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
